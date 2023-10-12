@@ -27,8 +27,8 @@ button, input[type=submit], input[type=button] {
 	font-size: 1em;
 	cursor: pointer;
 	border-radius: 25px;
-	color: #000000;
-	background-color: #ffc72c;
+	color: #565656;
+	background-color: #000000;
 	border-color: #ffd98e #ffbe3d #de9300;
 }
 
