@@ -23,7 +23,7 @@ if (! empty($_SESSION["userId"])) {
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 <div class="elfsight-app-66ae45e7-b02d-4349-9b1f-33f114c5ae3c"></div>
     <title>Test</title>
-    <img src="logo.jpg">
+    <img src="img/logo.jpg">
 
 <ul id="menu">     
   <li>
