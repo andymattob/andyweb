@@ -33,7 +33,7 @@ button, input[type=submit], input[type=button] {
 }
 
 input[type=submit]:hover {
-	background-color: #f7c027;
+	background-color: #000000;
 }
 
 ::placeholder {
