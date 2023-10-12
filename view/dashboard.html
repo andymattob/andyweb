@@ -79,9 +79,13 @@ if (! empty($_SESSION["userId"])) {
   <li>
     <a href="dataord.html">Dataord</a>   
   </li>
-  
+  <form action="search-action.php" method="post" id="frmLogin">
+
    <input type="search" id="search" name="search" placeholder="Sök...">
-   
+   <input type="submit" name="login" value="Sök" class="full-width">
+
+   </form>
+
    <li>
     <a href="#" class="drop">Profil</a>
       <div class="dropdown_1column">    
