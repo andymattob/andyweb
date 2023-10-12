@@ -28,10 +28,9 @@ input[type=search] {
     width: 24%;
   }
 
-  input[type=search]::placeholder{
+  input[type=search]:placeholder{
     color: #ffffff;
     background-color: #000000;
-    border: 2px solid #565656;
   }
 
   .filterDiv {
