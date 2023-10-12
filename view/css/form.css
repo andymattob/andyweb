@@ -37,7 +37,7 @@ input[type=submit]:hover {
 }
 
 ::placeholder {
-	color: #bdbfc4;
+	color: #565656;
 }
 
 label {
