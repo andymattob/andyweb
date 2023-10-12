@@ -11,20 +11,20 @@ input[type=search] {
     width: 150px;
     height: 36px;
     box-sizing: border-box;
-    border: 2px solid gray;
+    border: 2px solid #565656;
     border-radius: 24px;
     font-size: 18px;
-    background-color: black;
+    background-color: b#000000;
     background-image: url('/view/img/search.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     transition: width 0.4s ease-in-out;
-    color: gray;
+    color: #565656;
     margin-top: 4px;
   }
   
-  input[type=text]:focus {
+  input[type=search]:focus {
     width: 24%;
   }
 
@@ -63,7 +63,7 @@ input[type=search] {
   
   .btn.active {
     background-color: #666;
-    color: white;
+    color: #f1f1f1;
   }
 
   h1{
