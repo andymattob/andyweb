@@ -28,6 +28,10 @@ input[type=search] {
     width: 24%;
   }
 
+  input[type=search]::placeholder{
+    color: #ffffff;
+  }
+
   .filterDiv {
     float: left;
     background-color: #2196F3;
