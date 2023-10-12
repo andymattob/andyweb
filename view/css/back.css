@@ -28,7 +28,7 @@ input[type=search] {
     width: 24%;
   }
 
-  input[type=search]:placeholder{
+  input[type=search]::placeholder{
     color: #ffffff;
     background-color: #000000;
   }
