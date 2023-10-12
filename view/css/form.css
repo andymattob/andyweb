@@ -29,7 +29,6 @@ button, input[type=submit], input[type=button] {
 	border-radius: 25px;
 	color: #565656;
 	background-color: #000000;
-	border-color: #ffd98e #ffbe3d #de9300;
 }
 
 input[type=submit]:hover {
