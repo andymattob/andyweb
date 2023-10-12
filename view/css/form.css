@@ -35,6 +35,15 @@ input[type=submit]:hover {
 	background-color: #000000;
 }
 
+button, input[type=text], input[type=password] {
+	padding: 8px 20px;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius: 25px;
+	color: #565656;
+	background-color: #000000;
+}
+
 ::placeholder {
 	color: #565656;
 }
