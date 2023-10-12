@@ -2,8 +2,8 @@
 <head>
 <title>User Login</title>
 <meta name="viewport" content="width=device-width , initial-scale=1">
-<link rel="stylesheet" type="text/css" href="./view/css/form.css">
-<link rel="stylesheet" href="./view/css/back.css">
+<link rel="stylesheet" type="text/css" href="/view/css/form.css">
+<link rel="stylesheet" href="/view/css/back.css">
 </head>
 <body>
 	<div class="phppot-container tile-container text-center">
@@ -43,12 +43,12 @@
         var password = document.getElementById("password").value;
         if(userName == "") 
         {
-            document.getElementById("user_info").innerHTML = "required";
+            document.getElementById("user_info").innerHTML = "nödvändig";
         	$valid = false;
         }
         if(password == "") 
         {
-        	document.getElementById("password_info").innerHTML = "required";
+        	document.getElementById("password_info").innerHTML = "nödvändig";
             $valid = false;
         }
         return $valid;
