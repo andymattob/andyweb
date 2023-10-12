@@ -89,6 +89,8 @@ if (! empty($_SESSION["userId"])) {
           <div class="col_1">             
               <h3>Välkommen <b><?php echo $displayName; ?></b>, Du har loggat in!<br></h3>
               <ul>
+                  <li><a href="myprofile.php">Min Profil</a></li>
+                  <li><a href="settings.php">Inställningarr</a></li>
                   <li><a href="./logout.php">Logga ut</a></li>
               </ul>                     
           </div>                   
