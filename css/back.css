@@ -1,3 +1,36 @@
 body {
     background-image: url("img/back.jpg");
 }
+
+table {
+    color: white;
+    font-size: 20;
+    background-color: black;
+    padding: auto;
+}
+
+h1{
+    text-align: center;
+      }
+
+      input[type=text] {
+        width: 550px;
+        height: 36px;
+        box-sizing: border-box;
+        border: 2px solid gray;
+        border-radius: 24px;
+        font-size: 18px;
+        background-color: black;
+        background-image: url('/img/search.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+        color: gray;
+        margin-top: 4px;
+      }
+      
+      input[type=text]:focus {
+        width: 24%;
+      }
+    
