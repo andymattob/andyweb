@@ -9,6 +9,7 @@ body {
     padding: auto;
     height: 600px;
     border: 2px solid black;
+    border-radius: 14px;
 }
 
 h1{
