@@ -20,16 +20,16 @@ h1{
         width: 650px;
         height: 35px;
         box-sizing: border-box;
-        border: 2px solid gray;
+        border: 2px solid lightgray;
         border-radius: 24px;
         font-size: 18px;
-        background-color: black;
+        background-color: gray;
         background-image: url('img/search.png');
         background-position: 10px 10px; 
         background-repeat: no-repeat;
         padding: 12px 20px 12px 40px;
         transition: width 0.4s ease-in-out;
-        color: gray;
+        color: white;
         margin-top: 4px;
       }
       
