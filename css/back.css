@@ -7,6 +7,8 @@ body {
     font-size: 20px;
     background-color: lightgray;
     padding: auto;
+    height: 600px;
+    border: 2px solid black;
 }
 
 h1{
@@ -15,7 +17,7 @@ h1{
 
       input[type=text] {
         width: 650px;
-        height: 36px;
+        height: 35px;
         box-sizing: border-box;
         border: 2px solid gray;
         border-radius: 24px;
