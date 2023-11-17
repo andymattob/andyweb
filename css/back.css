@@ -34,6 +34,10 @@ h1{
       }
       
       input[type=text]:focus {
-        width: 24%;
+        width: 38%;
+      }
+
+      input[type=text]::placeholder{
+        color: white;
       }
     
