@@ -92,7 +92,7 @@ li a:hover {
 
 .filterDiv {
   float: left;
-  background-color: #2196F3;
+  background-color: gray;
   color: #ffffff;
   width: 100px;
   line-height: 100px;
@@ -115,15 +115,16 @@ li a:hover {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+  background-color: black;
   cursor: pointer;
+  color: white;
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: gray;
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: grey;
   color: white;
 }
