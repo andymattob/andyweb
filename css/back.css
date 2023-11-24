@@ -1,5 +1,6 @@
 body {
     background-image: url("img/back.jpg");
+    text-align: center;
 }
 
 .front {
@@ -18,6 +19,16 @@ body {
   background-color: lightgray;
   padding: auto;
   height: 4300px;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+
+.front3 {
+  color: black;
+  font-size: 20px;
+  background-color: lightgray;
+  padding: auto;
+  height: 900px;
   border: 2px solid black;
   border-radius: 14px;
 }
