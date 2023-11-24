@@ -83,96 +83,125 @@ include("auth_session.php");
     </form>
 <div class="front">
   <h1>Underhållning</h1>
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Visa alla</button>
+    <button class="btn" onclick="filterSelection('Onlinespel')"> Onlinespel</button>
+    <button class="btn" onclick="filterSelection('Videos')"> Videos</button>
+    <button class="btn" onclick="filterSelection('Bilder')"> Bilder</button>
+  </div>
+  
+ 
+  
+  <script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+
 <table>
   <tr>
     <th>Onlinespel</th>
   </tr>
   <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-</table>
+    <td> <div class="container">
+      <div class="filterDiv Onlinespel">BMW</div>
+      <div class="filterDiv Onlinespel">Orange</div>
+      <div class="filterDiv Onlinespel">Volvo</div>
+      <div class="filterDiv Onlinespel">Red</div>
+      <div class="filterDiv Onlinespel">Ford</div>
+      <div class="filterDiv Onlinespel">Blue</div>
+      <div class="filterDiv Onlinespel">Cat</div>
+      <div class="filterDiv Onlinespel">Dog</div>
+      <div class="filterDiv Onlinespel">Melon</div>
+      <div class="filterDiv Onlinespel">Kiwi</div>
+      <div class="filterDiv Onlinespel">Banana</div>
+      <div class="filterDiv Onlinespel">Lemon</div>
+      <div class="filterDiv Onlinespel">Cow</div>
+    </div></td>
+ </table>
 
-<table>
+ <table>
   <tr>
     <th>Videos</th>
   </tr>
   <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-</table>
+    <td> <div class="container">
+      <div class="filterDiv Videos">BMW</div>
+      <div class="filterDiv Videos">Orange</div>
+      <div class="filterDiv Videos">Volvo</div>
+      <div class="filterDiv Videos">Red</div>
+      <div class="filterDiv Videos">Ford</div>
+      <div class="filterDiv Videos">Blue</div>
+      <div class="filterDiv Videos">Cat</div>
+      <div class="filterDiv Videos">Dog</div>
+      <div class="filterDiv Videos">Melon</div>
+      <div class="filterDiv Videos">Kiwi</div>
+      <div class="filterDiv Videos">Banana</div>
+      <div class="filterDiv Videos">Lemon</div>
+      <div class="filterDiv Videos">Cow</div>
+    </div></td>
+ </table>
 
-<table>
+ <table>
   <tr>
     <th>Bilder</th>
   </tr>
   <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-  <tr>
-    <td><a href=""><img src="img/"></a></td>
-    <td><a href=""><img src="img/"></a></td>
-  </tr>
-</table>
-
+    <td> <div class="container">
+      <div class="filterDiv Bilder">BMW</div>
+      <div class="filterDiv Bilder">Orange</div>
+      <div class="filterDiv Bilder">Volvo</div>
+      <div class="filterDiv Bilder">Red</div>
+      <div class="filterDiv Bilder">Ford</div>
+      <div class="filterDiv Bilder">Blue</div>
+      <div class="filterDiv Bilder">Cat</div>
+      <div class="filterDiv Bilder">Dog</div>
+      <div class="filterDiv Bilder">Melon</div>
+      <div class="filterDiv Bilder">Kiwi</div>
+      <div class="filterDiv Bilder">Banana</div>
+      <div class="filterDiv Bilder">Lemon</div>
+      <div class="filterDiv Bilder">Cow</div>
+    </div></td>
+ </table>
 </div>
 
 </body>
