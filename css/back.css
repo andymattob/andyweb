@@ -94,10 +94,10 @@ li a:hover {
   float: left;
   background-color: gray;
   color: #ffffff;
-  width: 100px;
+  width: 120px;
   line-height: 100px;
   text-align: center;
-  margin: 2px;
+  margin: 4px;
   display: none;
 }
 
