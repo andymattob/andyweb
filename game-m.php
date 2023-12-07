@@ -11,7 +11,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gamesphere - Hem</title>
+<title>Gamesphere - Memory Game</title>
 <link rel="stylesheet" href="css/back.css">
 <link rel="stylesheet" href="css/menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
@@ -62,37 +62,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </form> 
       </div>
 <div class="front">
-<table>
-  <tr>
-    <th><p>Forum</p></th>
-    <th><p>Senast Inlagd</p></th>
-  </tr>
-  <tr>
-    <td></td>
-    <td><a href="#"><img src="img/memory.jpg"></a></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><a href="#"><img src="img/test.jpg"></a></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><a href="#"><img src="img/test.jpg"></a></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><a href="#"><img src="img/test.jpg"></a></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><a href="#"><img src="img/test.jpg"></a></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><a href="#"><img src="img/test.jpg"></a></td>
-  </tr>
-</table>
+  <div class="center">
+  <iframe src="memorygame.php" height="500" width="500" title="Memory Game" ></iframe>
 </div>
-
+</div>
 </body>
 </html>

@@ -227,3 +227,9 @@ font-size: 20px;
 background-color: black;
 color: white;
 }
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}

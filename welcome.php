@@ -69,7 +69,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </tr>
   <tr>
     <td></td>
-    <td><a href="#"><img src="img/memory.jpg"></a></td>
+    <td><a href="game-m.php"><img src="img/memory.jpg"></a></td>
   </tr>
   <tr>
     <td></td>

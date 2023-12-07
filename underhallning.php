@@ -124,7 +124,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </tr>
   <tr>
     <td> <div class="container">
-      <div class="filterDiv Onlinespel"><a href="#"><img src="img/memory.jpg"></a></div>
+      <div class="filterDiv Onlinespel"><a href="game-m.php"><img src="img/memory.jpg"></a></div>
       <div class="filterDiv Onlinespel"><a href="#"><img src="img/test.jpg"></a></div>
       <div class="filterDiv Onlinespel"><a href="#"><img src="img/test.jpg"></a></div>
       <div class="filterDiv Onlinespel"><a href="#"><img src="img/test.jpg"></a></div>
