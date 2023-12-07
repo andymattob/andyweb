@@ -16,6 +16,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <link rel="stylesheet" href="css/menu.css">
 <link rel="stylesheet" href="https://fonts.googlepid.com/icon?family=Material+Icons">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<meta name="viewport" content="width=device-width, Initial-scale=1.0">
 </head>
 <body>
     <a href="welcome.php"><img src="img/logo.jpg"></a>
@@ -65,10 +66,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <div class="front">
 <ul class="cards">
   <li class="cards">
-  <div class="Material-icons">
+    <div class="view front-view">
     <span class="Material-icons">question_mark</span>
   </div>
-  <div class="view back-view"></div>
+  <div class="view back-view">
+    <img src="memimg/img-1.png" alt="card-img">
+  </div>
   </li>
 </ul>
 </div>
