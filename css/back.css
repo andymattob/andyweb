@@ -43,6 +43,17 @@ body {
   border-radius: 14px;
 }
 
+.frontreg {
+  color: black;
+  font-size: 20px;
+  background-color: lightgray;
+  padding: auto;
+  height: 600px;
+  border: 2px solid black;
+  border-radius: 14px;
+text-align: center;
+}
+
 table {
   border: 2px solid black;
 }
@@ -83,13 +94,14 @@ table {
         color: black;
       }
     
-        #submit[type=submit] {
-        width: 150px;
-        height: 45px;
+    #button[type=submit] {
+        width: 47px;
+        height: 35px;
         border: 2px solid black;
+        border-radius: 24px;
         font-size: 18px;
-        background-color: black;
-        color: white;
+        background-color: lightgrey;
+        color: black;
       }
 
       #username[type=text] {
@@ -104,6 +116,46 @@ table {
  #username[type=text]::placeholder{
         color: white;
       }
+   
+      #email[type=email] {
+        width: 360px; padding: 20px;
+        height: 35px;
+        border: 2px solid lightgray;
+        font-size: 18px;
+        background-color: gray;
+        color: white;
+      }
+
+ #mobilenumber[type=text]::placeholder{
+        color: white;
+      }
+
+   #mobilenumber[type=text] {
+        width: 360px; padding: 20px;
+        height: 35px;
+        border: 2px solid lightgray;
+        font-size: 18px;
+        background-color: gray;
+        color: white;
+      }
+
+ #email[type=email]::placeholder{
+        color: white;
+      }
+
+      #fname[type=text] {
+        width: 360px; padding: 20px;
+        height: 35px;
+        border: 2px solid lightgray;
+        font-size: 18px;
+        background-color: gray;
+        color: white;
+      }
+
+ #fname[type=text]::placeholder{
+        color: white;
+      }
+
 
       #password[type=password] {
         width: 360px; padding: 20px;
@@ -114,11 +166,11 @@ table {
         color: white;
       }
 
- #password[type=password]::placeholder{
+ #password[type=password]::placeholder {
         color: white;
       }
 
-      #new_password[type=password] {
+      #password_confirm[type=password] {
         width: 360px; padding: 20px;
         height: 35px;
         border: 2px solid lightgray;
@@ -127,21 +179,15 @@ table {
         color: white;
       }
 
- #new_password[type=password]::placeholder{
+ #password_confirm[type=password]::placeholder {
         color: white;
       }
 
-      #confirm_password[type=password] {
-        width: 360px; padding: 20px;
+  #legend {
+        width: 500px;
         height: 35px;
-        border: 2px solid lightgray;
         font-size: 18px;
         background-color: gray;
-        color: white;
-      }
-
- #confirm_password[type=password]::placeholder{
-        color: white;
       }
 
 #divmenu ul {

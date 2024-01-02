@@ -52,12 +52,12 @@ else{
                <?php
 // Code for fecthing user full name on the bassis of username or email.
 $username=$_SESSION['userlogin'];
-$query=$dbh->prepare("SELECT  FullName FROM userdata WHERE (UserName=:username || UserEmail=:username)");
+$query=$dbh->prepare("SELECT  UserName FROM userdata WHERE (UserName=:username || UserName=:username)");
       $query->execute(array(':username'=> $username));
        while($row=$query->fetch(PDO::FETCH_ASSOC)){
-        $username=$row['FullName'];
-       }
-       ?>
+        $username=$row['UserName'];
+}     
+     ?>
           <h1>Välkommen <font face="Tahoma" color="red"><?php echo $username;?> ! </font></h1>
           <br />
  <a href="myprofile.php" class="btn btn-large btn-info"><i class="icon-home icon-white"></i> Min Profil</a>
@@ -73,16 +73,17 @@ $query=$dbh->prepare("SELECT  FullName FROM userdata WHERE (UserName=:username |
           </div>
         </form> 
       </div>
+
 <div class="front">
 <table>
   <tr>
-    <th><b><?php echo $username;?> </b> Profil</th>
+    <th> <font face="Tahoma" color="red"><?php echo $username;?> </font> </b> Profil</th>
   </tr>
   <tr>
-    <td><a href=""><img src="img/"></a></td>
+    <td>Namn:<?php echo $fullname;?></td>
   </tr>
   <tr>
-    <td><a href=""><img src="img/"></a></td>
+    <td>Email:<?php echo $useremail;?></td>
   </tr>
   <tr>
     <td><a href=""><img src="img/"></a></td>
@@ -97,6 +98,63 @@ $query=$dbh->prepare("SELECT  FullName FROM userdata WHERE (UserName=:username |
     <td><a href=""><img src="img/"></a></td>
   </tr>
 </table>
+
+
+		<div id="right-nav">
+			<h1>Personal Info</h1>
+			<hr />
+			<br />
+			<?php
+			include('config.php');
+
+			$result=mysql_query("SELECT * FROM userdata where id='$id' ");
+			
+			while($test = mysql_fetch_array($result))
+			{
+				$id = $test['id'];	
+				echo " <div class='info-user'>";
+				echo " <div>";
+				echo " <label>Fullname</label>&nbsp;&nbsp;&nbsp;<b>".$test['fullname']."</b>";
+				echo "</div> ";
+				echo "<hr /> ";		
+				echo "<br /> ";		
+				echo " <div>";
+				echo " <label>Lastname</label>&nbsp;&nbsp;&nbsp;&nbsp;<b>".$test['lastname']."</b>";
+				echo "</div> ";
+				echo "<hr /> ";	
+				echo "<br /> ";		
+				echo " <div>";
+				echo " <label>Username</label>&nbsp;&nbsp;&nbsp;<b>".$test['username']."</b>";
+				echo "</div> ";
+				echo "<hr /> ";	
+				echo "<br /> ";		
+				echo " <div>";
+				echo " <label>Birthday</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>".$test['birthday']."</b>";
+				echo "</div> ";
+				echo "<hr /> ";	
+				echo "<br /> ";		
+				echo " <div>";
+				echo " <label>Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>".$test['gender']."</b>";
+				echo "</div> ";
+				echo "<hr /> ";	
+				echo "<br /> ";		
+				echo " <div>";
+				echo " <label>Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>".$test['number']."</b>";
+				echo "</div> ";
+				echo "<hr /> ";	
+				echo "<br /> ";	
+				echo "</div> ";
+				echo "<br /> ";		
+				echo " <div class='edit-info'>";
+				echo " <a href ='edit_profile.php?user_id=$id'><button>Edit Profile</button></a>";
+				echo "</div> ";
+				echo "<br /> ";	
+				echo "<br /> ";	
+			}
+			?>
+			
+		</div>
+
 </div>
 <?php } ?>
 </body>
