@@ -1,13 +1,14 @@
 <?php
-// Initialize the session
 session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
+include('config.php');
+// Validating Session
+if(strlen($_SESSION['userlogin'])==0)
+{
+header('location:index.php');
 }
+else{
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,14 +49,25 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </button>
             <div class="dropdown-content">
               <div class="header">
-                <h2>Välkommen,  <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>!</h2>
+               <?php
+// Code for fecthing user full name on the bassis of username or email.
+$username=$_SESSION['userlogin'];
+$query=$dbh->prepare("SELECT  FullName FROM userdata WHERE (UserName=:username || UserEmail=:username)");
+      $query->execute(array(':username'=> $username));
+       while($row=$query->fetch(PDO::FETCH_ASSOC)){
+        $username=$row['FullName'];
+       }
+       ?>
+          <h1>Välkommen <font face="Tahoma" color="red"><?php echo $username;?> ! </font></h1>
+          <br />
+ <a href="myprofile.php" class="btn btn-large btn-info"><i class="icon-home icon-white"></i> Min Profil</a>
+ <a href="settings.php" class="btn btn-large btn-info"><i class="icon-home icon-white"></i> Inställningar</a>
+          <a href="logout.php" class="btn btn-large btn-info"><i class="icon-home icon-white"></i> Logga ut</a>
+        </div>
+        <br />
+<script type="text/javascript">
+</script>
               </div>   
-              <div class="row">
-                <div class="column2">
-                  <a href="myprofile.php">Min Profil</a>
-                  <a href="settings.php">Inställningar</a>
-                  <a href="logout.php">Logga ut</a>
-                </div>
               </div>
             </div>
           </div>
@@ -64,7 +76,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <div class="front">
 <table>
   <tr>
-    <th><b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> Profil</th>
+    <th><b><?php echo $username;?> </b> Profil</th>
   </tr>
   <tr>
     <td><a href=""><img src="img/"></a></td>
@@ -86,6 +98,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </tr>
 </table>
 </div>
-
+<?php } ?>
 </body>
 </html>
