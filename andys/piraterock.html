@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+ 
+    <title>Andys Radioplay - Pirate Rock</title>
+<link rel="stylesheet" href="css/back.css">
+  </head>
+  <body>
+<div class="overmenu">
+<h3>Länkar till andra sidor:<a href="../index.html">Gamesphere</a> <a href="index.html">Andys Radioplay</a></h3>
+</div>
+    <header><img src="img/logo.jpg"></header>
+    <main><a href="index.html">Startsida</a> <a href="radiostationer.html">Radiostationer</a></main>
+    <div class="content">
+    <table>
+  <tr>
+    <th><img src="https://piraterock.se/wp-content/uploads/2018/05/PR-Logo-300x189.png"><img src="img/listenlive.jpg" onclick="document.getElementById('player').play()"></th>
+  </tr>
+   <tr>
+    <th><a href="piraterock.html">Startsida</a> <a href="#">Låtlista</a></th>
+  </tr>
+</table>
+    </div>
+<footer>
+<audio controls id="player">
+  <source src="https://stream.piraterock.se:8100/webradio" type="audio/mpeg">
+</audio>
+</footer>
+  </body>
+</html>
