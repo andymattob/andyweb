@@ -54,4 +54,5 @@ if(!$result)
 }
 
 $DB = new Database():
-    
+
+    ?>
