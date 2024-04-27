@@ -1,0 +1,156 @@
+.menu{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: #000000;
+    padding: 0 8%;
+}
+
+.menu-logo {
+    cursor: pointer;
+}
+
+.menu-list{
+    width: 100%;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.menu-list li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.menu-list li a {
+font-size: 1rem;
+    font-weight: 500;
+text-decoration: none;
+    color:white;
+font-family: fantasy sans-serif cursive;
+
+}
+
+/* unvisited link */
+.menu a:link {
+  color: #FFFFFF;
+}
+
+/* visited link */
+.menu a:visited {
+  color: #FFFFFF;
+}
+
+/* mouse over link */
+.menu a:hover {
+  color: #666666;
+}
+
+/* selected link */
+.menu a:active {
+  color: #009999;
+}
+
+.profile-dropdown{
+    position: relative;
+    width: fit-content;
+}
+
+.profile-dropdown-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--secondary);
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+    transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+.profile-dropdown-btn:hover{
+   background-color: var(--secondary-light-2);
+    box-shadow: var(--shadow);
+}
+
+.profile-img{
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.profile-img i{
+    position: absolute;
+    right: 0;
+    bottom: 0.3rem;
+    font-size: 0.5rem;
+    color: #009966;
+}
+
+profile-dropdown-btn span{
+  margin: 0 0.5rem;
+    margin-right: 0;
+}
+
+.profile-dropdown-list{
+    position: absolute;
+    top: 68px;
+    width: 220px;
+    right: 0;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.profile-dropdown-list.active{
+max-height: 500px;
+}
+
+.profile-dropdown-list hr{
+border: 0.5px solid #009966;
+}
+
+.profile-dropdown-list-item{
+    padding: 0.5em 0 0.5rem 1rem;
+    transition: background-color 0.2, padding-left 0.2s;
+}
+
+.profile-dropdown-list-item:hover{
+    padding-left: 1.5rem;
+    background-color: var(--secondary);
+}
+
+.profile-dropdown-list-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+}
+
+.profile-dropdown-list-item a i{
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: var(--secondary);
+    color: #FFFFFF;
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.delete-btn{
+    background-color: #990033;
+}
+
+.delete-btn:hover{
+    background-color: #660000;
+}

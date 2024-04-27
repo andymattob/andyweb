@@ -1,0 +1,47 @@
+.menuradio{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: #999999;
+    padding: 0 8%;
+}
+
+.menu-listradio{
+    width: 100%;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.menu-listradio li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.menu-listradio li a {
+font-size: 1rem;
+font-weight: 500;
+text-decoration: none;
+color:white;
+font-family: fantasy sans-serif cursive;
+
+}
+
+/* unvisited link */
+.menuradio a:link {
+  color: #FFFFFF;
+}
+
+/* visited link */
+.menuradio a:visited {
+  color: #FFFFFF;
+}
+
+/* mouse over link */
+.menuradio a:hover {
+  color: #666666;
+}
+
+/* selected link */
+.menuradio a:active {
+  color: #009999;
+}
