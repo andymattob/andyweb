@@ -1,0 +1,48 @@
+    .container{
+      background: #999999;
+      width: 700px;
+      margin: 0 auto;
+      padding-top: 1px;
+      padding-bottom: 5px;
+    }
+    .comment, .reply{
+      margin-top: 5px;
+      padding: 10px;
+      border-bottom: 1px solid black;
+    }
+    .reply{
+      border: 1px solid #ccc;
+    }
+    h5{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: #FFFFFF;
+      font-size: 18px;
+    }
+
+    form{
+      margin: 10px;
+    }
+    form h6{
+      margin-bottom: 5px;
+      color: #FFFFFF;
+      font-size: 18px;
+    }
+    form input, form textarea{
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      background-color: #333333;
+      color: #FFFFFF;
+    }
+    form button.submit, button{
+      background-color: #666666;
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      width: 100%;
+    }
+    button.reply{
+      background-color: #666666
+    }

@@ -19,6 +19,13 @@ body {
     border-radius: 25px;
 }
 
+.forum_up {
+    background-color: #000000;
+    text-align: center;
+    height: 3600px;
+    border-radius: 25px;
+}
+
 .nytt {
     background-color: #666666;
     text-align: left;
@@ -77,6 +84,15 @@ body {
     margin-top: 100px;
     border-radius: 25px;
     
+}
+
+.forum_2 {
+    background-color: #666666;
+    text-align: left;
+   width: 1880px;
+    height: 3400px;
+    margin-top: 100px;
+    border-radius: 25px;
 }
 
 .login/register {

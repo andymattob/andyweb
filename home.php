@@ -86,7 +86,7 @@ if(isset($_GET['logout'])){
     <div class="nytt">
         <p>Nya Inlagda:</p>
         <a href="m-game.php"><img src="img/memory.jpg" class="nytt_img"></a> 
-        <a href="#"><img src="img/test.jpg" class="nytt_img"></a>
+        <a href="mcm-game.php"><img src="img/test.jpg" class="nytt_img"></a>
         <a href="#"><img src="img/test.jpg" class="nytt_img"></a> 
         <a href="#"><img src="img/test.jpg" class="nytt_img"></a> 
         <a href="#"><img src="img/test.jpg" class="nytt_img"></a> 
