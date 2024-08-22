@@ -89,7 +89,7 @@ if(isset($_GET['logout'])){
     <a href="guldkanalen.php"><img src="https://guldkanalen.se/wp-content/uploads/2022/10/uppe_logo.png"></a>
     <a href="dansbandskanalen.php"><img src="https://dansbandskanalen.se/wp-content/uploads/2021/10/logo.png"></a>
     <a href="countryrocks.php"><img src="https://countryrocksradio.com/images/CRR_web.png"></a>
-    <a href="piraterock.php"><img src="https://piraterock.se/wp-content/uploads/2018/05/PR-Logo-300x189.png"></a>
+    <a href="piraterock.php"><img src="https://piraterock.se/wp-content/uploads/2018/05/PR-Logo-300x189.png"></a>>
     </div>
 </div>
     <script src="js/script.js"></script>
