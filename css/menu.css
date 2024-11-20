@@ -1,0 +1,61 @@
+/* Styla navigeringen */
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Styla dropdown-container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styla dropdown-knappen */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styla innehållet i dropdown-menyn */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Länkar i dropdown-menyn */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Ändra färg på länk vid hovring */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Visa dropdown-menyn när man hovrar över dropdown-container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Alternativ: Visa dropdown-menyn vid klick */
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.do_menu {
+    background-color: aqua;
+}
+
+.do_menu li{
+    text-decoration: none;
+}

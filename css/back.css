@@ -1,0 +1,58 @@
+
+body {
+    background-image: url(img/back.jpg);
+    text-align: center;
+    font-family: Times New Roman, Courier, Arial;
+    font-size: 24px;
+}
+
+.logo {
+    background-color: black;
+    height: 480px;
+}
+
+.container {
+    background-color: grey;
+    color: white;
+    height: 4100px;
+}
+
+.text_input {
+    background-color: antiquewhite;
+    height: 20px;
+}
+
+.button_input {
+    background-color: dimgrey;
+        color:white;
+    width: 120px;
+}
+
+.nytt {
+    background-color: black;
+    color: white;
+    height: 200px;
+    width: auto;
+}
+
+
+a:link {
+  color: red;
+    text-decoration: none;
+}
+
+
+a:visited {
+  color: green;
+}
+
+
+a:hover {
+  color: hotpink;
+}
+
+
+a:active {
+  color: blue;
+}
+

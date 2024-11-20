@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Startsida</title>
+        <link rel="stylesheet" href="css/back.css" />
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/mobile_menu.css" />
+        <style type="text/css">
+        #slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+            
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="logo"><img src="img/logo.jpg">
+            <nav>
+   <a href="index.html">Startsida</a> |
+    <a href="onlinespel.html">Onlinespel</a> |
+    <a href="videosar.html">Videosar</a> |
+    <a href="bilder.html">Bilder</a> |
+    <a href="dataord.html">Dataord</a> ||
+    <!-- Dropdown-meny för profil -->
+    <div class="dropdown">
+        <button class="dropbtn">Profil</button>
+        <div class="dropdown-content">  
+
+        </div>
+    </div>
+</nav>
+        <div class="container">
+            <h1>Innehåll:</h1>
+            <div id="slider">
+        <figure>
+     <a href="onlinespel.html"><img src="img/slider1.jpg"></a>
+     <a href="videosar.html"><img src="img/slider2.jpg"></a>
+     <a href="bilder.html"><img src="img/slider3.jpg"></a>
+     <a href="dataord.html"><img src="img/slider4.jpg"></a>
+     <a href="onlinespel.html"><img src="img/slider1.jpg"></a>
+                </figure>
+                </div>
+               <h1>Nya Inlagda:</h1>
+                         <div class="nytt">
+         <a href="game-memory.html"><img src="img/memory.jpg"></a>
+    <a href="game-mmemory.html"><img src="img/mcmemory.jpg"></a>
+    <a href="game-snake.html"><img src="img/snake.jpg"></a>
+    <a href="game-tetris.html"><img src="img/tetris.jpg"></a>
+    <a href="video-prippsbla.html"><img src="img/pripps_bla_reklam.jpg"></a>
+    <a href="bilder-hlt.html"><img src="img/hund_laser_tidning.jpg"></a>
+            </div>
+            </div>
+            </div>
+    </body>
+</html>
